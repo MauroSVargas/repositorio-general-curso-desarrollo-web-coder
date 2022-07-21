@@ -154,10 +154,6 @@ a{
     width: 180px;
 }
 
-.gradient__historia{
-    
-}
-
 @media (max-width:768px) {
     #quiensoy__grid{
         grid-template-rows: 75px auto auto 60px;
