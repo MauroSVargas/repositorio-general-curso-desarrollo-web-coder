@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/proyecto.css">
     <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
     <link rel="icon" href="img/icono-de-pagina.ico">
@@ -27,7 +28,7 @@
     </header>
  
     <section class="portada">
-            <h1>INICIO</h1>
+            <h1 class="animate__animated animate__fadeInDown">INICIO</h1>
             <div class="imagen__portada">
                 <img src="img/inicio.png" alt="">        
             </div>
@@ -36,7 +37,7 @@
 
 
     <section>
-        <h3>TIPO DE TRABAJOS</h3>
+        <h3 class="animate__animated animate__fadeInDown">TIPO DE TRABAJOS</h3>
             <ul class="servicios">
                 <li>Maquillajes para eventos (cumpleaños de quince, bodas, etcétera)</li> 
                 <li>Clases de automaquillaje</li>
@@ -58,5 +59,10 @@
 
     </div>
       
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
 </body>
 </html>
