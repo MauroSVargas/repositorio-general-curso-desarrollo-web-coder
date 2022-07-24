@@ -158,6 +158,14 @@ a{
 .imagen__historia{
     border-radius: 20%;
     box-shadow: 5px 5px 5px #d8c0ab;
+    width: 220px;
+    height: 200px;
+    transition: all 0.7s;
+}
+
+.imagen__historia:hover{
+    width: 300px;
+    height: 280px;
 }
 
 .marcas__contenedor{
@@ -224,7 +232,14 @@ a{
     border-style: solid;
     border-width: 5px;
     border-color: black;
-    transition: heigth 2s width 2s;
+    height: 180px;
+    width: 180px;
+    transition: all 1s;
+}
+
+.galeria__style:hover{
+    width: 350px;
+    height: 350px;
 }
 
 @media (max-width:600px) {
