@@ -27,6 +27,10 @@ a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.hover__a:hover{
+    transform: scale(2,1 );
+}
+
 /* ----------------------------------------INDEX---------------------------------------- */
 
 #index__grid{
@@ -56,7 +60,13 @@ a{
     justify-content: flex-start;
     width: 80px;
     height: 75px;
+    transition: all 1s;
 }
+
+.icono__portada:hover{
+    transform: scale(3,3) translate(15px, 15px);
+}
+
 #nav{
     display: flex;
     justify-content: flex-end;
@@ -68,6 +78,11 @@ a{
     color: #f4f4f4;
     margin: 0 15px;
     font-size: 1.0rem;
+    transition: all .4s;
+}
+
+.nav__link:hover{
+    font-size: 1.2rem;
 }
 
 .portada {
@@ -105,6 +120,11 @@ a{
 .redes__desing{
     color: #f4f4f4;
     font-size: 1.1rem;
+    transition: all .4s;
+}
+
+.redes__desing:hover{
+    font-size: 1.3rem;
 }
 
 .icono__redes{
@@ -204,6 +224,7 @@ a{
     border-style: solid;
     border-width: 5px;
     border-color: black;
+    transition: heigth 2s width 2s;
 }
 
 @media (max-width:600px) {
