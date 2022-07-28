@@ -16,34 +16,79 @@
     <div id="galeria__grid">
     
         <header id="header">
-            <nav id="nav">
-                <img class="icono__portada" src="../img/icono-de-pagina.ico" alt="">
-                <ul>
-                    <a class="nav__link" href="../index.html">Inicio</a>
-                    <a class="nav__link" href="quien soy.html">Quien Soy</a>
-                    <a class="nav__link" href="galeria.html">Galeria</a>
-                    <a class="nav__link" href="opiniones.html">Opiniones</a>
-                    <a class="nav__link" href="contacto.html">Contacto</a>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg"> 
+                <div class="container-fluid"> 
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="quien-soy.html">Quien Soy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="opiniones.html">Opiniones</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
-    
-    <section>
+        <section class="contenerdor__galeria">
 
         <h1 class="animate__animated animate__fadeInDown">GALERIA</h1>
-        <div class="contenedor__galeria"">
-            <img class="galeria__style" src="../img/imagen_galeria1.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria2.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria3.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria4.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria5.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria6.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria7.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria8.jpeg" alt="">
-            <img class="galeria__style" src="../img/imagen_galeria9.jpeg" alt="">
-        </div>    
-    </section>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/imagen_galeria1.jpeg" class= "d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria2.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria3.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria4.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria5.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria6.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria7.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria8.jpeg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/imagen_galeria9.jpeg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          </section>
         
     <footer id="footer">
         
@@ -58,6 +103,8 @@
     </footer>
 
     </div>
+
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 
     <script src="js/wow.min.js"></script>
     <script>
