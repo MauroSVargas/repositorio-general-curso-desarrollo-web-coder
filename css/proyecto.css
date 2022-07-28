@@ -58,11 +58,6 @@ a{
     border-color: #F6BDD1;
 }    
 
-.navbar-collapse{
-    flex-grow: 0;
-    align-content: center;
-}
-
 .navbar-light .navbar-nav .nav-link.active{
     color: #f4f4f4;
 }
@@ -78,7 +73,6 @@ a{
 
 .portada {
     grid-area: portada;
-    
 }
 
 .imagen__portada{ 
@@ -219,7 +213,6 @@ a{
 }
 
 #carouselExampleFade{
-    grid-area: galeria;
     margin: 0 auto;
     width: 550px;
     z-index: 0;
@@ -238,9 +231,24 @@ a{
 @media (max-width:600px) {
     #carouselExampleFade{
         width: 400px;
-
     }
 }
+
+@media (max-width:400px) {
+    #galeria__grid{
+        grid-template-rows: 75px 490px 60px;
+    }
+
+    #carouselExampleFade{
+        width: 300px;
+    }
+
+    .d-block{
+        width: 200px;
+        height: 300px;
+    }
+}
+
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 
 #opiniones__grid{
@@ -253,38 +261,46 @@ a{
     background-image: linear-gradient(#f4f4f4,#f3d9dc);
 }
 
-.contenedor__opiniones{
-    grid-area: opiniones;
-    display: flex;
-    gap: 20px;
-    padding: 30px 10px;
+.container-fluid{
+    width: auto;
+    margin-right: 0;
 }
 
-.opinion__card{
+.row{
+    grid-area: opiniones;
+    justify-content: space-around;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.card{
     border-style: outset;
     border-width: 5px;
     border-color: #b49286;
 }
 
-.stars__opinion{
+.estrellas-opinion{
     height: 100px;
     width: 100px;
 }
 
-.contenedor__opiniones{
-    z-index: 0;
+.card-img-top{
+    width: 100px;
+    height: 100px;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     #opiniones__grid{
-        grid-template-rows: 75px 585px 60px;
+        grid-template-rows: 75px auto 60px;
     }
 
-    .contenedor__opiniones{
+    .row{
         flex-direction: column;
+        align-items: center;
+        margin: 10px auto;
+        gap: 20px;
     }
 }
-
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 
 #contacto__grid{
