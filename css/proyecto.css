@@ -123,6 +123,13 @@ a{
     height: 20px;
 }
 
+@media (max-width:400px) {
+    .imagen__portada{
+        margin: 0 auto;
+        width: 250px;
+        height: 250px;
+    }
+}
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 
@@ -228,17 +235,11 @@ a{
     border-color: #b49286;
 }
 
-.d-block:hover{
-    width: 450px;
-    height: 550px;
-}
-
 @media (max-width:600px) {
     #carouselExampleFade{
         width: 400px;
 
     }
-    
 }
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 
