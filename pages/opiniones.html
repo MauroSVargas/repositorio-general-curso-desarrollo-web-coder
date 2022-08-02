@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/proyecto.css">
-    <link rel="icon" href="../img/icono-de-pagina.ico">
+    <link rel="icon" href="../img/icono-de-pagina.jpg">
     <title>PaulaMakeUp</title>
 </head>
 <body>
@@ -23,35 +24,48 @@
                     <a class="nav__link" href="opiniones.html">Opiniones</a>
                     <a class="nav__link" href="contacto.html">Contacto</a>
                 </ul>
-            </nav>
+              </div>
+            </div>
+          </nav>
+
         </header>
 
     <section >
         <h1 class="animate__animated animate__fadeInDown">OPINIONES</h1>
-
-        <div class="contenedor__opiniones animate__animated animate__fadeInDown">  
-            
-            <div class="opinion__card">
-                <img src="../img/opinion.png" alt="">
-                <p>descripcion del cliente: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda ipsa ratione possimus? Tenetur aliquam quisquam, ad incidunt, assumenda architecto voluptatem neque sed inventore quis perferendis esse adipisci rerum nostrum similique?</p>
-                <img class="stars__opinion" src="../img/5 estrellas.png" alt="">
-            </div>
         
-            <div class="opinion__card">
-                    <img src="../img/opinion.png" alt="">
-                    <p>descripcion del cliente: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga architecto pariatur quam impedit dicta similique totam voluptas velit, consequatur nobis, maxime dolorem harum dolor fugit obcaecati assumenda voluptatum non quibusdam?</p>                                             
-                    <img class="stars__opinion" src="../img/4 estrellas.png" alt="">
+        <div class="container">
+            <div class="row">
+        <div class="card" style="width: 18rem;">
+            <img src="../img/opinion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Persona 1</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="../img/5 estrellas.png" class="estrellas-opinion" alt="">
             </div>
-        
-            <div class="opinion__card">
-                    <img src="../img/opinion.png" alt="">
-                    <p>descripcion del cliente: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, temporibus iure! Eum veritatis modi, est placeat laborum, nostrum blanditiis quia voluptatum, ad reiciendis quod laboriosam voluptas nemo sunt accusantium? Quasi?</p>                     
-                    <img class="stars__opinion" src="../img/5 estrellas.png" alt="">
-            </div>
+          </div>
 
+          <div class="card" style="width: 18rem;">
+            <img src="../img/opinion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Persona 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="../img/4 estrellas.png" class="estrellas-opinion" alt="">
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="../img/opinion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">persona 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <img src="../img/5 estrellas.png" class="estrellas-opinion" alt="">
+            </div>
+          </div>
+        </div>
         </div>
     
     </section>
+
 
     <footer id="footer">
         
@@ -67,7 +81,9 @@
 
     </div>
     
-    <script src="js/wow.min.js"></script>
+    <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    
+    <script src="../js/wow.min.js"></script>
     <script>
     new WOW().init();
     </script>
