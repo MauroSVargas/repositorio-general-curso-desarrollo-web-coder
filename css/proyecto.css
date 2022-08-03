@@ -83,7 +83,7 @@ a{
 }
 
 .icono__pagina:hover{
-      transform: scale(3,3) translate(15px, 15px); 
+    transform: scale(3,3) translate(15px, 15px); 
 }
 
 .portada {
@@ -226,7 +226,6 @@ a{
         width: 100px;
         height: 100px;
     }
-    
 }
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
@@ -300,7 +299,11 @@ a{
     justify-content: space-around;
     margin-top: 100px;
     flex-wrap: wrap;
+<<<<<<< HEAD
 }
+=======
+ } 
+>>>>>>> rama_pruebas
 
 .card{
     border-style: outset;
