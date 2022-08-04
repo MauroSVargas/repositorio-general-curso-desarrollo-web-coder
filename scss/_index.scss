@@ -10,21 +10,21 @@
      "servicios" 
      "footer";
     grid-template-rows: 75px auto auto 60px;
-    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+    background-image: linear-gradient(#f4f4f4, #f3d9dc);
   }
   
   #header {
     grid-area: header;
     position: sticky;
     z-index: 1;
-    background-color: #8B575C;
+    background-color:$header-color;
     border-bottom: ridge;
     border-width: 8px;
     border-color: #F6BDD1; 
   }
   
   .navbar-light .navbar-nav .nav-link.active {
-    color: #f4f4f4;
+    color:$ul-color;
     transition: all .7s; 
   }
   
@@ -33,7 +33,7 @@
   }
   
   .bg {
-    background-color: #8B575C; 
+    background-color:$header-color; 
   }
   
   .navbar, .container-fluid {
@@ -88,11 +88,11 @@
     align-items: center;
     width: 100%;
     bottom: 0;
-    background-color: $footer-color;
+    background-color: $footer-color
   }
   
   .redes__desing {
-    color: #f4f4f4;
+    color: $ul-color;
     font-size: 1.1rem;
     transition: all .4s; 
   }
@@ -106,19 +106,19 @@
     height: 20px; 
   }
   
-  @media (max-width:$media-q-desktop) {
+  @media (max-width: $media-q-bootstrap) {
     .icono__pagina, .icono__pagina:hover {
       transition: none;
       transform: none; 
      } 
   }
   
-  @media (max-width:$media-q-smartphone) {
+  @media (max-width: $media-q-smartphone) {
     .imagen__portada {
       margin: 0 auto;
       width: 250px;
       height: 250px; 
-     } 
+     }
   }
   
   

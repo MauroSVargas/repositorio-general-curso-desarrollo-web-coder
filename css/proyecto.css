@@ -111,7 +111,7 @@ a {
   width: 20px;
   height: 20px; }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .icono__pagina, .icono__pagina:hover {
     transition: none;
     transform: none; } }
