@@ -1,0 +1,73 @@
+@import "variables";
+
+/* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
+#quiensoy__grid {
+    display: grid;
+    grid-template-areas: 
+    "header"
+     "historia"
+     "marcas"
+     "footer";
+    grid-template-rows: 75px 310px 275px 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+  }
+  
+  .card__historia {
+    grid-area: historia;
+    display: flex;
+    gap: 10px;
+    align-content: flex-start;
+    padding: 10px;
+    margin-top: 40px; 
+  }
+  
+  .imagen__historia {
+    border-radius: 20%;
+    box-shadow: 5px 5px 5px #d8c0ab;
+    width: 220px;
+    height: 200px;
+    transition: all 0.7s; 
+                          
+                        &:hover {
+                            width: 300px;
+                            height: 280px; }
+                          }
+  
+  .marcas__contenedor {
+    grid-area: marcas;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 50px; 
+  }
+  
+  .marcas__style {
+    height: 120px;
+    width: 180px; 
+  }
+  
+  @media (max-width: 768px) {
+    #quiensoy__grid {
+      grid-template-rows: 75px auto auto 60px; 
+     }
+                    .card__historia {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center; 
+                            
+                        .marcas__contenedor {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center; 
+                            
+                            .imagen__historia {
+                                border-radius: 50%;
+                                box-shadow: 5px 5px 5px #d8c0ab;
+                                width: 100px;
+                                height: 100px; 
+                                } 
+                            }
+                        }
+  }

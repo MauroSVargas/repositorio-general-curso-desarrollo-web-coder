@@ -1,0 +1,59 @@
+@import "variables";
+
+/* ----------------------------------------PAGE OPINION----------------------------------------*/
+#opiniones__grid {
+    display: grid;
+    grid-template-areas: "header"
+   "opiniones"
+   "footer";
+    grid-template-rows: 75px auto 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+  }
+  
+  .container {
+    grid-area: opiniones;
+    padding: 0; 
+  }
+  
+  .row {
+    display: flex;
+    gap: 100px;
+    margin: 85px 0;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+  
+  .card {
+    border-style: outset;
+    border-width: 5px;
+    border-color: #b49286; 
+  }
+  
+  .estrellas-opinion {
+    height: 100px;
+    width: 100px; 
+  }
+  
+  .card-img-top {
+    width: 100px;
+    height: 100px; 
+  }
+  
+  @media (max-width: 1199px) {
+    #opiniones__grid {
+      grid-template-rows: 75px auto 60px; 
+     } 
+  }
+  
+  @media (max-width: 992px) {
+    #opiniones__grid {
+      grid-template-rows: 75px auto 60px; 
+     }
+    
+     .row {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px auto;
+      gap: 20px; 
+     } 
+  }

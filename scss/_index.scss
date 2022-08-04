@@ -1,0 +1,124 @@
+@import "variables";
+
+/* ----------------------------------------INDEX---------------------------------------- */
+#index__grid {
+    display: grid;
+    height: 100%;
+    grid-template-areas: 
+     "header"
+     "portada"
+     "servicios" 
+     "footer";
+    grid-template-rows: 75px auto auto 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+  }
+  
+  #header {
+    grid-area: header;
+    position: sticky;
+    z-index: 1;
+    background-color: #8B575C;
+    border-bottom: ridge;
+    border-width: 8px;
+    border-color: #F6BDD1; 
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #f4f4f4;
+    transition: all .7s; 
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active:hover {
+    font-size: 1.8rem; 
+  }
+  
+  .bg {
+    background-color: #8B575C; 
+  }
+  
+  .navbar, .container-fluid {
+    padding: 0; 
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end; 
+  }
+  
+  .navbar-nav {
+    align-items: center; 
+  }
+  
+  .icono__pagina {
+    width: 65px;
+    height: 65px;
+    margin-top: 1px;
+    margin-left: 0;
+    transition: all .8s; 
+  }
+  
+  .icono__pagina:hover {
+    transform: scale(3, 3) translate(15px, 15px); 
+  }
+  
+  .portada {
+    grid-area: portada; 
+  }
+  
+  .imagen__portada {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .servicios {
+    grid-area: servicios;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    list-style: none; 
+  }
+  
+  #footer {
+    grid-area: footer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    background-color: $footer-color;
+  }
+  
+  .redes__desing {
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    transition: all .4s; 
+  }
+  
+  .redes__desing:hover {
+    font-size: 1.3rem; 
+  }
+  
+  .icono__redes {
+    width: 20px;
+    height: 20px; 
+  }
+  
+  @media (max-width:$media-q-desktop) {
+    .icono__pagina, .icono__pagina:hover {
+      transition: none;
+      transform: none; 
+     } 
+  }
+  
+  @media (max-width:$media-q-smartphone) {
+    .imagen__portada {
+      margin: 0 auto;
+      width: 250px;
+      height: 250px; 
+     } 
+  }
+  
+  

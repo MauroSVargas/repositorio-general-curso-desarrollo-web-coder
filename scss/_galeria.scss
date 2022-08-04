@@ -1,0 +1,49 @@
+@import "variables";
+
+/* ----------------------------------------PAGE GALERIA----------------------------------------*/
+#galeria__grid {
+    display: grid;
+    grid-template-areas: 
+     "header" 
+     "galeria" 
+     "footer";
+    grid-template-rows: 75px auto 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+  }
+  
+  #carouselExampleFade {
+    margin: 0 auto;
+    width: 550px;
+    z-index: 0; 
+  }
+  
+  .d-block {
+    width: 400px;
+    height: 500px;
+    margin-bottom: 10px;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #b49286; 
+  }
+  
+  @media (max-width: 600px) {
+    #carouselExampleFade {
+      width: 400px; 
+     } 
+  }
+  
+  @media (max-width: 400px) {
+    #galeria__grid {
+      grid-template-rows: 75px 490px 60px; 
+     }
+    
+     #carouselExampleFade {
+      width: 300px; 
+     }
+    
+     .d-block {
+      width: 200px;
+      height: 300px; 
+     } 
+  }
