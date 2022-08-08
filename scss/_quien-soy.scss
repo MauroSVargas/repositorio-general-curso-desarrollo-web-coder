@@ -47,7 +47,7 @@
     width: 180px; 
   }
   
-  @media (max-width: 992px) {
+  @media (max-width:$media-q-tablet) {
     #quiensoy__grid {
       grid-template-rows: 75px auto auto 60px;
      }
