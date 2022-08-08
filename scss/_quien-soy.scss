@@ -47,27 +47,28 @@
     width: 180px; 
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     #quiensoy__grid {
-      grid-template-rows: 75px auto auto 60px; 
+      grid-template-rows: 75px auto auto 60px;
      }
-                    .card__historia {
-                        display: flex;
-                        flex-direction: column;
-                        text-align: center;
-                        align-items: center; 
-                            
-                        .marcas__contenedor {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center; 
-                            
-                            .imagen__historia {
-                                border-radius: 50%;
-                                box-shadow: 5px 5px 5px #d8c0ab;
-                                width: 100px;
-                                height: 100px; 
-                                } 
-                            }
-                        }
+    
+     .card__historia {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center; 
+     }
+
+     .marcas__contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+     }
+    
+     .imagen__historia {
+      border-radius: 50%;
+      box-shadow: 5px 5px 5px #d8c0ab;
+      width: 100px;
+      height: 100px; 
+     } 
   }
