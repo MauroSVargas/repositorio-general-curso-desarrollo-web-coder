@@ -2,14 +2,13 @@
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-    display: grid;
+    @extend #index__grid;
     grid-template-areas: 
     "header"
-     "historia"
-     "marcas"
-     "footer";
+    "historia"
+    "marcas"
+    "footer";
     grid-template-rows: 75px 310px 275px 60px;
-    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
   }
   
   .card__historia {
@@ -53,8 +52,8 @@
      }
     
      .card__historia {
-      display: flex;
       flex-direction: column;
+      display: flex;
       text-align: center;
       align-items: center; 
      }
@@ -66,9 +65,9 @@
      }
     
      .imagen__historia {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       box-shadow: 5px 5px 5px #d8c0ab;
-      width: 100px;
-      height: 100px; 
      } 
   }

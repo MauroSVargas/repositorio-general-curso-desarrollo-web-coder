@@ -23,3 +23,17 @@ $media-q-tablet: 768px;
 $media-q-smartphone: 480px;
 
 $media-q-bootstrap: 992px;
+
+@mixin flex-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin h-design-center {
+    color: #8B575C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 2.1;
+    
+}

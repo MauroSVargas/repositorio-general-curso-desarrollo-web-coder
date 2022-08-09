@@ -17,10 +17,11 @@ body{
 }
 
 h1, h3{
-   color:#8B575C;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   text-align: center;
-   line-height: 2;
+   @include h-design-center;
+}
+
+h3 {
+   font-size:medium;
 }
 
 a{
@@ -33,6 +34,6 @@ a{
    font-size: 1.7rem;}
    
    .h3, h3{
-       font-size: 1.3rem;
+       font-size: 1.050rem;
    }
 }

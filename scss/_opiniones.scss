@@ -2,12 +2,12 @@
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-    display: grid;
-    grid-template-areas: "header"
-   "opiniones"
-   "footer";
-    grid-template-rows: 75px auto 60px;
-    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
+    @extend #index__grid;
+    grid-template-areas: 
+    "header"
+    "opiniones"
+    "footer";
+    grid-template-rows: 75px 585px 60px; 
   }
   
   .container {
@@ -24,9 +24,10 @@
   }
   
   .card {
-    border-style: outset;
+    border-radius: 5%;
     border-width: 5px;
-    border-color: #b49286; 
+    border-color: #b49286;
+    border-style: outset;
   }
   
   .estrellas-opinion {
@@ -35,8 +36,7 @@
   }
   
   .card-img-top {
-    width: 100px;
-    height: 100px; 
+    @extend.estrellas-opinion;
   }
   
   @media (max-width: 1199px) {

@@ -10,11 +10,15 @@ body {
   margin: 0;
   width: 100%; }
 
+  
 h1, h3 {
-  color: #8B575C;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  line-height: 2; }
+    color: #8B575C;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    line-height: 2; }
+    
+h3 {
+   font-size: medium; }
 
 a {
   text-decoration: none;
@@ -27,10 +31,13 @@ a {
     font-size: 1.3rem; } }
 
 /* ----------------------------------------INDEX---------------------------------------- */
-#index__grid {
+#index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
   display: grid;
   height: 100%;
-  grid-template-areas: "header" "portada" "servicios"  "footer";
+  grid-template-areas: "header"
+ "portada"
+ "servicios" 
+ "footer";
   grid-template-rows: 75px auto auto 60px;
   background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
@@ -93,8 +100,8 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   bottom: 0;
   background-color: #b49286; }
@@ -124,10 +131,11 @@ a {
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-  display: grid;
-  grid-template-areas: "header" "historia" "marcas" "footer";
-  grid-template-rows: 75px 310px 275px 60px;
-  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
+  grid-template-areas: "header"
+ "historia"
+ "marcas"
+ "footer";
+  grid-template-rows: 75px 310px 275px 60px; }
 
 .card__historia {
   grid-area: historia;
@@ -163,8 +171,8 @@ a {
   #quiensoy__grid {
     grid-template-rows: 75px auto auto 60px; }
   .card__historia {
-    display: flex;
     flex-direction: column;
+    display: flex;
     text-align: center;
     align-items: center; }
   .marcas__contenedor {
@@ -172,24 +180,24 @@ a {
     flex-direction: column;
     align-items: center; }
   .imagen__historia {
-    border-radius: 50%;
-    box-shadow: 5px 5px 5px #d8c0ab;
     width: 100px;
-    height: 100px; } }
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px #d8c0ab; } }
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
 #galeria__grid {
-  display: grid;
-  grid-template-areas: "header"  "galeria"  "footer";
-  grid-template-rows: 75px auto 60px;
-  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
+  grid-template-areas: "header" 
+ "galeria" 
+ "footer";
+  grid-template-rows: 75px auto 60px; }
 
 #carouselExampleFade {
   margin: 0 auto;
   width: 550px;
   z-index: 0; }
 
-.d-block {
+.d-block, .card {
   width: 400px;
   height: 500px;
   margin-bottom: 10px;
@@ -207,16 +215,16 @@ a {
     grid-template-rows: 75px 490px 60px; }
   #carouselExampleFade {
     width: 300px; }
-  .d-block {
+  .d-block, .card {
     width: 200px;
     height: 300px; } }
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-  display: grid;
-  grid-template-areas: "header" "opiniones" "footer";
-  grid-template-rows: 75px auto 60px;
-  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
+  grid-template-areas: "header"
+ "opiniones"
+ "footer";
+  grid-template-rows: 75px auto 60px; }
 
 .container {
   grid-area: opiniones;
@@ -230,17 +238,11 @@ a {
   flex-wrap: wrap; }
 
 .card {
-  border-style: outset;
-  border-width: 5px;
-  border-color: #b49286; }
+  border-style: outset; }
 
-.estrellas-opinion {
+.estrellas-opinion, .card-img-top {
   height: 100px;
   width: 100px; }
-
-.card-img-top {
-  width: 100px;
-  height: 100px; }
 
 @media (max-width: 1199px) {
   #opiniones__grid {
@@ -257,10 +259,10 @@ a {
 
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 #contacto__grid {
-  display: grid;
-  grid-template-areas: "header" "formulario" "footer";
-  grid-template-rows: 75px 585px 60px;
-  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
+  grid-template-areas: "header"
+ "formulario"
+ "footer";
+  grid-template-rows: 75px 585px 60px; }
 
 .parrafo__contacto {
   text-align: center; }

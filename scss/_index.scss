@@ -82,10 +82,8 @@
   #footer {
     grid-area: footer;
     position: relative;
-    display: flex;
-    justify-content: center;
+    @include flex-align-center;
     justify-content: space-evenly;
-    align-items: center;
     width: 100%;
     bottom: 0;
     background-color: $footer-color

@@ -2,13 +2,12 @@
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
 #galeria__grid {
-    display: grid;
+    @extend #index__grid; 
     grid-template-areas: 
      "header" 
      "galeria" 
      "footer";
     grid-template-rows: 75px auto 60px;
-    background-image: linear-gradient(#f4f4f4, #f3d9dc); 
   }
   
   #carouselExampleFade {
