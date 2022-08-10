@@ -7,7 +7,7 @@
     "header"
     "opiniones"
     "footer";
-    grid-template-rows: 75px 585px 60px; 
+    grid-template-rows: 75px auto 60px; 
   }
   
   .container {
@@ -18,7 +18,7 @@
   .row {
     display: flex;
     gap: 100px;
-    margin: 85px 0;
+    margin: 83px 0;
     justify-content: center;
     flex-wrap: wrap; 
   }

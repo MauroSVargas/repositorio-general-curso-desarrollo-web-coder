@@ -10,15 +10,14 @@ body {
   margin: 0;
   width: 100%; }
 
-  
 h1, h3 {
-    color: #8B575C;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    line-height: 2; }
-    
+  color: #8B575C;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  line-height: 2.1; }
+
 h3 {
-   font-size: medium; }
+  font-size: medium; }
 
 a {
   text-decoration: none;
@@ -28,16 +27,13 @@ a {
   .h1, h1 {
     font-size: 1.7rem; }
   .h3, h3 {
-    font-size: 1.3rem; } }
+    font-size: 1.050rem; } }
 
 /* ----------------------------------------INDEX---------------------------------------- */
 #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
   display: grid;
   height: 100%;
-  grid-template-areas: "header"
- "portada"
- "servicios" 
- "footer";
+  grid-template-areas: "header" "portada" "servicios"  "footer";
   grid-template-rows: 75px auto auto 60px;
   background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
@@ -131,10 +127,7 @@ a {
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-  grid-template-areas: "header"
- "historia"
- "marcas"
- "footer";
+  grid-template-areas: "header" "historia" "marcas" "footer";
   grid-template-rows: 75px 310px 275px 60px; }
 
 .card__historia {
@@ -187,9 +180,7 @@ a {
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
 #galeria__grid {
-  grid-template-areas: "header" 
- "galeria" 
- "footer";
+  grid-template-areas: "header"  "galeria"  "footer";
   grid-template-rows: 75px auto 60px; }
 
 #carouselExampleFade {
@@ -197,7 +188,7 @@ a {
   width: 550px;
   z-index: 0; }
 
-.d-block, .card {
+.d-block {
   width: 400px;
   height: 500px;
   margin-bottom: 10px;
@@ -215,15 +206,13 @@ a {
     grid-template-rows: 75px 490px 60px; }
   #carouselExampleFade {
     width: 300px; }
-  .d-block, .card {
+  .d-block {
     width: 200px;
     height: 300px; } }
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-  grid-template-areas: "header"
- "opiniones"
- "footer";
+  grid-template-areas: "header" "opiniones" "footer";
   grid-template-rows: 75px auto 60px; }
 
 .container {
@@ -233,11 +222,14 @@ a {
 .row {
   display: flex;
   gap: 100px;
-  margin: 85px 0;
+  margin: 83px 0;
   justify-content: center;
   flex-wrap: wrap; }
 
 .card {
+  border-radius: 5%;
+  border-width: 5px;
+  border-color: #b49286;
   border-style: outset; }
 
 .estrellas-opinion, .card-img-top {
@@ -259,9 +251,7 @@ a {
 
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 #contacto__grid {
-  grid-template-areas: "header"
- "formulario"
- "footer";
+  grid-template-areas: "header" "formulario" "footer";
   grid-template-rows: 75px 585px 60px; }
 
 .parrafo__contacto {
