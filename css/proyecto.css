@@ -10,13 +10,13 @@ body {
   margin: 0;
   width: 100%; }
 
-h1, h3 {
+h1, h2 {
   color: #8B575C;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   line-height: 2.1; }
 
-h3 {
+h2 {
   font-size: medium; }
 
 a {
@@ -89,7 +89,7 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  margin: 15px 0;
+  margin: 17px 0;
   list-style: none; }
 
 #footer {
