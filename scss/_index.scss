@@ -92,8 +92,11 @@
   }
   
   .redes__desing {
+    color:#343a40;
     font-size: 1.1rem;
     transition: all .4s; 
+    width: 22px;
+    height: 22px;
   }
   
   .redes__desing:hover {
@@ -101,10 +104,10 @@
     color: #343a40;
   }
   
-  .icono__redes {
-    width: 20px;
-    height: 20px; 
-  }
+  .icon__redes {
+    width: 22px;
+    height: 22px;
+}
   
   @media (max-width: $media-q-bootstrap) {
     .icono__pagina, .icono__pagina:hover {

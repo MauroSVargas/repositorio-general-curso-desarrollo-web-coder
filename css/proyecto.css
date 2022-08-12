@@ -20,8 +20,7 @@ h2 {
   font-size: medium; }
 
 a {
-  text-decoration: none;
-  color: #f4f4f4; }
+  text-decoration: none; }
 
 @media (min-width: 1200px) {
   .h1, h1 {
@@ -104,16 +103,19 @@ a {
   background-color: #b49286; }
 
 .redes__desing {
+  color: #343a40;
   font-size: 1.1rem;
-  transition: all .4s; }
+  transition: all .4s;
+  width: 22px;
+  height: 22px; }
 
 .redes__desing:hover {
   font-size: 1.3rem;
   color: #343a40; }
 
-.icono__redes {
-  width: 20px;
-  height: 20px; }
+.icon__redes {
+  width: 22px;
+  height: 22px; }
 
 @media (max-width: 992px) {
   .icono__pagina, .icono__pagina:hover {
