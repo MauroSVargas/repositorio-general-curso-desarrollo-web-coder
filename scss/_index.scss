@@ -65,8 +65,10 @@
   }
   
   .imagen__portada {
-    display: flex;
-    justify-content: center; 
+    width: 400px;
+    height: 360px;
+    display: block;
+    
   }
   
   .servicios {
@@ -90,13 +92,13 @@
   }
   
   .redes__desing {
-    color: $ul-color;
     font-size: 1.1rem;
     transition: all .4s; 
   }
   
   .redes__desing:hover {
     font-size: 1.3rem; 
+    color: #f4f4f4;
   }
   
   .icono__redes {
@@ -114,8 +116,15 @@
   @media (max-width: $media-q-smartphone) {
     .imagen__portada {
       margin: 0 auto;
-      width: 250px;
-      height: 250px; 
+      width: 275px;
+      height: 275px; 
+     }
+
+     .servicios{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
      }
   }
   

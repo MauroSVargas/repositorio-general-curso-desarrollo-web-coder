@@ -21,7 +21,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #f4f4f4; }
 
 @media (min-width: 1200px) {
   .h1, h1 {
@@ -79,8 +79,9 @@ a {
   grid-area: portada; }
 
 .imagen__portada {
-  display: flex;
-  justify-content: center; }
+  width: 400px;
+  height: 360px;
+  display: block; }
 
 .servicios {
   grid-area: servicios;
@@ -103,12 +104,12 @@ a {
   background-color: #b49286; }
 
 .redes__desing {
-  color: #f4f4f4;
   font-size: 1.1rem;
   transition: all .4s; }
 
 .redes__desing:hover {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  color: #f4f4f4; }
 
 .icono__redes {
   width: 20px;
@@ -122,8 +123,13 @@ a {
 @media (max-width: 480px) {
   .imagen__portada {
     margin: 0 auto;
-    width: 250px;
-    height: 250px; } }
+    width: 275px;
+    height: 275px; }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center; } }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
