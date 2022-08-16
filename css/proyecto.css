@@ -31,7 +31,6 @@ a {
 /* ----------------------------------------INDEX---------------------------------------- */
 #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
   display: grid;
-  height: 100%;
   grid-template-areas: "header"
  "portada"
  "servicios" 
@@ -127,7 +126,7 @@ a {
 
 @media (max-width: 480px) {
   #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid 
-  { grid-template-rows: 75px 150px 350px 60px;
+  {
     height: 100vh;
   }
   
