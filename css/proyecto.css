@@ -32,7 +32,10 @@ a {
 #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
   display: grid;
   height: 100%;
-  grid-template-areas: "header" "portada" "servicios"  "footer";
+  grid-template-areas: "header"
+ "portada"
+ "servicios" 
+ "footer";
   grid-template-rows: 75px auto auto 60px;
   background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
@@ -123,9 +126,13 @@ a {
     transform: none; } }
 
 @media (max-width: 480px) {
-  #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
-    grid-template-rows: 75px 150px 200px 60px; }
-  .imagen__portada {
+  #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid 
+  {
+    grid-template-rows: 75px 150px 200px 60px; 
+    height: 100vh;
+  }
+  
+    .imagen__portada {
     margin: 0 auto;
     width: 275px;
     height: 275px; }
@@ -137,7 +144,10 @@ a {
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-  grid-template-areas: "header" "historia" "marcas" "footer";
+  grid-template-areas: "header"
+ "historia"
+ "marcas"
+ "footer";
   grid-template-rows: 75px 310px 275px 60px; }
 
 .card__historia {
@@ -190,7 +200,9 @@ a {
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
 #galeria__grid {
-  grid-template-areas: "header"  "galeria"  "footer";
+  grid-template-areas: "header" 
+ "galeria" 
+ "footer";
   grid-template-rows: 75px auto 60px; }
 
 #carouselExampleFade {
@@ -222,7 +234,9 @@ a {
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-  grid-template-areas: "header" "opiniones" "footer";
+  grid-template-areas: "header"
+ "opiniones"
+ "footer";
   grid-template-rows: 75px auto 60px; }
 
 .container {
@@ -261,7 +275,9 @@ a {
 
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 #contacto__grid {
-  grid-template-areas: "header" "formulario" "footer";
+  grid-template-areas: "header"
+ "formulario"
+ "footer";
   grid-template-rows: 75px 585px 60px; }
 
 .parrafo__contacto {
