@@ -123,6 +123,8 @@ a {
     transform: none; } }
 
 @media (max-width: 480px) {
+  #index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
+    grid-template-rows: 75px 150px 200px 60px; }
   .imagen__portada {
     margin: 0 auto;
     width: 275px;
