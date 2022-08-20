@@ -22,6 +22,10 @@ h2 {
 a {
   text-decoration: none; }
 
+ul, li {
+  padding: 0;
+  list-style: none; }
+
 @media (min-width: 1200px) {
   .h1, h1 {
     font-size: 1.7rem; }
@@ -29,12 +33,9 @@ a {
     font-size: 1.050rem; } }
 
 /* ----------------------------------------INDEX---------------------------------------- */
-#index__grid, #quiensoy__grid, #galeria__grid, #opiniones__grid, #contacto__grid {
+#index__grid {
   display: grid;
-  grid-template-areas: "header"
- "portada"
- "servicios" 
- "footer";
+  grid-template-areas: "header" "portada" "servicios"  "footer";
   grid-template-rows: 75px auto auto 60px;
   background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
@@ -88,10 +89,14 @@ a {
   grid-area: servicios;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 17px 0;
+  margin: 17px auto;
   list-style: none; }
+
+.list__item {
+  text-align: center; }
 
 #footer {
   grid-area: footer;
@@ -105,7 +110,7 @@ a {
   background-color: #b49286; }
 
 .redes__desing {
-  color: #343a40;
+  color: #f4f4f4;
   font-size: 1.1rem;
   transition: all .4s;
   width: 22px;
@@ -113,7 +118,7 @@ a {
 
 .redes__desing:hover {
   font-size: 1.3rem;
-  color: #343a40; }
+  color: #f4f4f4; }
 
 .icon__redes {
   width: 22px;
@@ -125,23 +130,19 @@ a {
     transform: none; } }
 
 @media (max-width: 480px) {
-
-    .imagen__portada {
+  .imagen__portada {
     margin: 0 auto;
     width: 275px;
     height: 275px; }
   .servicios {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
+    margin: 50px 0; } }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-  grid-template-areas: "header"
- "historia"
- "marcas"
- "footer";
-  grid-template-rows: 75px 310px 275px 60px; }
+  display: grid;
+  grid-template-areas: "header" "historia" "marcas" "footer";
+  grid-template-rows: 75px 310px 275px 60px;
+  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
 .card__historia {
   grid-area: historia;
@@ -193,10 +194,10 @@ a {
 
 /* ----------------------------------------PAGE GALERIA----------------------------------------*/
 #galeria__grid {
-  grid-template-areas: "header" 
- "galeria" 
- "footer";
-  grid-template-rows: 75px auto 60px; }
+  display: grid;
+  grid-template-areas: "header"  "galeria"  "footer";
+  grid-template-rows: 75px auto 60px;
+  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
 #carouselExampleFade {
   margin: 0 auto;
@@ -227,10 +228,10 @@ a {
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-  grid-template-areas: "header"
- "opiniones"
- "footer";
-  grid-template-rows: 75px auto 60px; }
+  display: grid;
+  grid-template-areas: "header" "opiniones" "footer";
+  grid-template-rows: 75px auto 60px;
+  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
 .container {
   grid-area: opiniones;
@@ -268,10 +269,10 @@ a {
 
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 #contacto__grid {
-  grid-template-areas: "header"
- "formulario"
- "footer";
-  grid-template-rows: 75px 585px 60px; }
+  display: grid;
+  grid-template-areas: "header" "formulario" "footer";
+  grid-template-rows: 75px 585px 60px;
+  background-image: linear-gradient(#f4f4f4, #f3d9dc); }
 
 .parrafo__contacto {
   text-align: center; }

@@ -3,7 +3,6 @@
 /* ----------------------------------------INDEX---------------------------------------- */
 #index__grid {
     display: grid;
-    height: 100%;
     grid-template-areas: 
      "header"
      "portada"
@@ -75,10 +74,15 @@
     grid-area: servicios;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 17px 0;
+    margin: 17px auto;
     list-style: none; 
+  }
+
+  .list__item{
+    text-align: center;
   }
   
   #footer {
@@ -88,11 +92,11 @@
     justify-content: space-evenly;
     width: 100%;
     bottom: 0;
-    background-color: $footer-color
+    background-color: $footer-color;
   }
   
   .redes__desing {
-    color:#343a40;
+    color:$ul-color;
     font-size: 1.1rem;
     transition: all .4s; 
     width: 22px;
@@ -101,7 +105,7 @@
   
   .redes__desing:hover {
     font-size: 1.3rem; 
-    color: #343a40;
+    color: $ul-color;
   }
   
   .icon__redes {
@@ -116,8 +120,7 @@
      } 
   }
   
-  @media (max-width: $media-q-smartphone) {
-
+  @media (max-width: 480px) {
     .imagen__portada {
       margin: 0 auto;
       width: 275px;
@@ -125,10 +128,7 @@
      }
 
      .servicios{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
+      margin: 50px 0;
      }
   }
   

@@ -2,13 +2,14 @@
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
-    @extend #index__grid;
+    display: grid;
     grid-template-areas: 
     "header"
     "historia"
     "marcas"
     "footer";
     grid-template-rows: 75px 310px 275px 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc);
   }
   
   .card__historia {

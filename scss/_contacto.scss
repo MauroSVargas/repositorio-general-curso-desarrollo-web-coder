@@ -2,12 +2,13 @@
 
 /* ----------------------------------------PAGE FORMULARIO----------------------------------------*/
 #contacto__grid {
-    @extend #index__grid;
+    display: grid;
     grid-template-areas: 
     "header"
     "formulario"
     "footer";
     grid-template-rows: 75px 585px 60px;
+    background-image: linear-gradient(#f4f4f4, #f3d9dc);
   }
   
   .parrafo__contacto {

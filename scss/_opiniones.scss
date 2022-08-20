@@ -2,12 +2,13 @@
 
 /* ----------------------------------------PAGE OPINION----------------------------------------*/
 #opiniones__grid {
-    @extend #index__grid;
+    display: grid;
     grid-template-areas: 
     "header"
     "opiniones"
     "footer";
     grid-template-rows: 75px auto 60px; 
+    background-image: linear-gradient(#f4f4f4, #f3d9dc);
   }
   
   .container {
