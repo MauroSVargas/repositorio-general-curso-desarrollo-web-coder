@@ -131,13 +131,13 @@ ul, li {
 
 @media (max-width: 480px) {
   .portada {
-    margin: 40px 0; }
+    margin: 45px 0 35px; }
   .imagen__portada {
     margin: 0 auto;
     width: 275px;
     height: 275px; }
   .servicios {
-    margin: 15px 0 25px; } }
+    margin: 15px 0 50px; } }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
