@@ -92,7 +92,7 @@ ul, li {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin: 17px auto;
+  margin: 12px auto;
   list-style: none; }
 
 .list__item {
@@ -130,12 +130,14 @@ ul, li {
     transform: none; } }
 
 @media (max-width: 480px) {
+  .portada {
+    margin: 40px 0; }
   .imagen__portada {
     margin: 0 auto;
     width: 275px;
     height: 275px; }
   .servicios {
-    margin: 50px 0; } }
+    margin: 30px 0; } }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
