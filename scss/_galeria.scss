@@ -48,16 +48,21 @@
   }
   
   @media (max-width: 480px) {
+    .h1__galeria{
+     margin: 75px auto 30px;
+    }
+
     #carouselExampleFade {
       width: 320px; 
-      margin: 60px auto;
+      margin-top: 60px;
+      gap: 40px;
      }
     
-     .h1__galeria{
-      margin-top: 40px;
-     }
-
-     .d-block {
+    .carousel-indicators{
+      margin: 20px;
+    }
+    
+    .d-block {
       width: 200px;
       height: 300px; 
      } 
