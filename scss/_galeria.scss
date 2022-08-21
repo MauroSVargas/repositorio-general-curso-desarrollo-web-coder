@@ -7,39 +7,53 @@
      "header" 
      "galeria" 
      "footer";
-    grid-template-rows: 75px auto 60px;
+    grid-template-rows: 75px 585px 60px;
     background-image: linear-gradient(#f4f4f4, #f3d9dc);
   }
   
-  #carouselExampleFade {
-    margin: 0 auto;
-    width: 550px;
-    z-index: 0; 
+  .contenedor__galeria{
+    grid-area: galeria;
   }
-  
-  .d-block {
-    width: 400px;
-    height: 500px;
-    margin-bottom: 10px;
+
+  #carouselExampleFade{
+    margin: 0 auto;
+    width: 450px;
     border-radius: 10%;
     border-width: 5px;
-    border-style: solid;
+    border-style: outset;
     border-color: #b49286; 
   }
   
+  .d-block {
+    height: 450px; 
+    border-radius: 9%;
+  }
+
+  .carousel-indicators{
+    position: static;
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators [data-bs-target]{
+    background-color: grey;
+  }
+
   @media (max-width: 600px) {
     #carouselExampleFade {
-      width: 400px; 
+      width: 415px; 
      } 
   }
   
-  @media (max-width: 400px) {
+  @media (max-width: 440px) {
     #galeria__grid {
-      grid-template-rows: 75px 490px 60px; 
+      grid-template-rows: 75px 535px 60px; 
      }
     
      #carouselExampleFade {
-      width: 300px; 
+      width: 320px; 
+      margin-top: 50px;
      }
     
      .d-block {
