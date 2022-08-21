@@ -18,7 +18,7 @@
 
     <div id="contacto__grid">
     
-        <header id="header">
+    <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light bg">
                 
                 <div class="container-fluid"> 
@@ -47,72 +47,75 @@
                     </ul>
                   </div>
                 </div>
-              </nav>
+            </nav>
         
-        </header>
+    </header>
 
     <section>
 
-    <h1 class="animate__animated animate__fadeInDown">CONTACTO</h1>
-
-    <form class="formulario">
-        <div>
-            <p class="parrafo__contacto">completa el formulario para contactarte<p>
-        </div>
-
-    <fieldset class="recuadro">
-        <div class="recuadro__formulario">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="nombre">
-        </div>
-
         <div>    
-            <label for="apellido">Apellido</label>
-            <input type="text" name="" id="apellido" placeholder="apellido">
+        <h1 class="animate__animated animate__fadeInDown h1__contacto">CONTACTO</h1>
         </div>
 
-        <div>
-            <label for="celular">Ingrese su celular</label>
-            <input type="tel" id="celular" placeholder=""> 
-        </div>
-    </fieldset>
-        
-        <div>
-            <p class="parrafo__contacto">Seleccione su género</p>
-        </div>
 
-    <fieldset class="recuadro">
-        <div class="recuadro">
-            <label for="hombre">Hombre</label>
-            <input type="radio" name="Seleccione su género" id="hombre">
+            <form action="form.php" method="POST" class="formulario">
+                <div>
+                    <p class="parrafo__contacto">completa el formulario para contactarte<p>
+                </div>
 
-            <label for="mujer">Mujer</label>
-            <input type="radio" name="Seleccione su género" id="mujer">
+            <fieldset class="recuadro">
+                <div class="recuadro__formulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="nombre">
+                </div>
 
-            <label for="no binario">No Binario</label>
-            <input type="radio" name="Seleccione su género" id="no binario">
-        </div>
-    </fieldset>
-        
-        <div>
-            <p class="parrafo__contacto">Escoja cuántas sesiones quiere</p>
-        </div>
+                <div>    
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="" id="apellido" placeholder="apellido">
+                </div>
 
-    <fieldset class="recuadro">
-        <div>
-            <label for="cantidad">Cantidad:</label>
-                <select name="" id="cantidad">
-                    <option value="1">1 CLASE</option>
-                    <option value="2">2 CLASES</option>
-                    <option value="3">3 CLASES</option>
-                </select>
-        </div>
-    </fieldset>
-        
-        <div>
-            <input type="reset" value="Borrar datos seleccionados"> <input type="submit" value="Enviar datos">
-        </div>    
-    </form>
+                <div>
+                    <label for="celular">Ingrese su celular</label>
+                    <input type="tel" id="celular" placeholder=""> 
+                </div>
+            </fieldset>
+                
+                <div>
+                    <p class="parrafo__contacto">Seleccione su género</p>
+                </div>
+
+            <fieldset class="recuadro">
+                <div class="recuadro">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="Seleccione su género" id="hombre" onchange="this.form.submit()">
+
+                    <label for="mujer">Mujer</label>
+                    <input type="radio" name="Seleccione su género" id="mujer" onchange="this.form.submit()">
+
+                    <label for="no binario">No Binario</label>
+                    <input type="radio" name="Seleccione su género" id="no binario" onchange="this.form.submit()">
+                </div>
+            </fieldset>
+                
+                <div>
+                    <p class="parrafo__contacto">Escoja cuántas sesiones quiere</p>
+                </div>
+
+            <fieldset class="recuadro">
+                <div>
+                    <label for="cantidad">Cantidad:</label>
+                        <select name="cantidad">
+                            <option value="1">1 CLASE</option>
+                            <option value="2">2 CLASES</option>
+                            <option value="3">3 CLASES</option>
+                        </select>
+                </div>
+            </fieldset>
+                
+                <div>
+                    <input type="reset" value="Borrar datos seleccionados"> <input type="submit" value="Enviar datos">
+                </div>    
+            </form>
 
     </section>
 
@@ -132,7 +135,7 @@
 
     </footer>
 
-    </div>
+</div>
 
 <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
     
