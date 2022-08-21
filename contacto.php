@@ -29,7 +29,7 @@ $asunto = 'enviado desde bypaulamakeup';
 
 mail($destinatario, $asunto, $mensaje, utf8_decode($mensaje), $header);
 
-header ('location:contacto.html');
+header ('location:index.html');
 
 
 ?>
