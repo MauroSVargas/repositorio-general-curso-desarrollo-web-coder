@@ -210,7 +210,8 @@ ul, li {
   border-radius: 10%;
   border-width: 5px;
   border-style: outset;
-  border-color: #b49286; }
+  border-color: #b49286;
+  z-index: 0; }
 
 .d-block {
   height: 450px;
@@ -229,12 +230,12 @@ ul, li {
   #carouselExampleFade {
     width: 415px; } }
 
-@media (max-width: 440px) {
-  #galeria__grid {
-    grid-template-rows: 75px 535px 60px; }
+@media (max-width: 480px) {
   #carouselExampleFade {
     width: 320px;
-    margin-top: 50px; }
+    margin: 60px auto; }
+  .h1__galeria {
+    margin-top: 40px; }
   .d-block {
     width: 200px;
     height: 300px; } }
