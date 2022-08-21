@@ -4,12 +4,6 @@
 $nombre= $_POST["nombre"];
 $apellido= $_POST["apellido"];
 $celular= $_POST["celular"];
-$hombre= $_POST["hombre"];
-$mujer= $_POST["mujer"];
-$binario= $_POST["no binario"];
-$clase1= $_POST["1"];
-$clase2= $_POST["2"];
-$clase3= $_POST["3"];
 
 //----------CUERPO DE MENSAJE----------//
 $mensaje= "este mensaje fue enviado por" . $nombre . $apellido . ",\r\n";
