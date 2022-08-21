@@ -24,7 +24,7 @@ if (isset($_POST['seleccione su género'])) {
 echo "cantidad: "; echo $_POST['cantidad'] '<p> y ha seleccionado' .$_POST['seleccione su género']. '</p>';
 
 $mensaje .="enviado el " . date('d/m/Y', time());
-$destinatario = 'mauroseba2000@gmail.com';
+$destinatario = 'contacto.snipper7@gmail.com';
 $asunto = 'enviado desde bypaulamakeup';
 
 mail($destinatario, $asunto, $mensaje, utf8_decode($mensaje), $header);
