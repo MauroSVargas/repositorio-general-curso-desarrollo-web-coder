@@ -30,18 +30,18 @@
   }
   
   @media (max-width:1200px) {
-    #contacto__grid {
-      grid-template-rows: 75px auto 60px; 
-     }
-    
      .formulario {
       margin: 10px 150px; 
      } 
   }
   
   @media (max-width:768px) {
+    #contacto__grid{ 
+    grid-template-rows: 75px 600px 60px;
+    }
+    
     .formulario {
-      margin: 10px 30px; 
+      margin: 40px 30px; 
      } 
   }
 

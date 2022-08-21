@@ -3,7 +3,7 @@
 /*----------------------------------------ETIQUETAS GENERALES----------------------------------------*/
 
 *, ::after, ::before {
-    box-sizing: unset; 
+    box-sizing: border-box; 
 }
 
 html{
@@ -12,7 +12,7 @@ html{
 
 body{
    min-height: 100%;
-   margin: 0;
+   margin: 0 0;
    width: 100%;
 }
 
@@ -26,6 +26,7 @@ h2 {
 
 a{
    text-decoration: none;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 ul,li{
