@@ -11,16 +11,11 @@ $mensaje. ="su telefono es" . $celular . ",\r\n";
 
 
 //----------RADIO BUTTONS----------//
-if(isset($_POST['seleccione su género'])) {
-    $id = $_POST['seleccione su género'];
-    if($id == "hombre") {
-        echo "SOMETHING HERE FOR VALUE hombre";
-    } else($id == "mujer") {
-        echo "SOMETHING HERE FOR VALUE mujer";
-    }
-    elseif($id == "no binario") {
-        echo "SOMETHING HERE FOR VALUE no binario"
-    }
+if (isset($_POST['submit'])) {
+    if (isset($_POST['seleccioneSuGénero']))
+        echo 'Has seleccionado'.$_POST['seleccioneSuGénero'];
+    else
+        echo 'Debes seleccionar una opción.';
 }
 
 echo "cantidad: "; echo $_POST['cantidad'] '<p> y ha seleccionado' .$_POST['cantidad']. '</p>';

@@ -236,12 +236,13 @@ ul, li {
 
 @media (max-width: 480px) {
   #galeria__grid {
-    min-height: 100vh; }
+    min-height: 100vh;
+    grid-template-rows: 75px auto 60px; }
   .h1__galeria {
-    margin: 45px auto; }
+    margin: 50px auto; }
   #carouselExampleFade {
     width: 300px;
-    margin-top: 50px; }
+    margin-top: 60px; }
   .d-block {
     width: 200px;
     height: 300px; } }
