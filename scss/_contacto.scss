@@ -37,15 +37,17 @@
   
   @media (max-width:768px) {
     #contacto__grid{ 
-    grid-template-rows: 75px 650px 60px;
+      min-height: 100vh;
+      grid-template-rows: 75px auto 60px;
     }
+    
     
     .h1__contacto{
       margin-top: 50px;
     }
 
     .formulario {
-      margin: 40px 30px; 
+      margin: 20px 30px; 
      } 
   }
 
