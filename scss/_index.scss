@@ -123,21 +123,21 @@
   @media (max-width: 480px) {
     #index__grid{
       min-height: 100vh;
+      grid-template-rows: 75px auto auto 60px;
     }
     
-    /*.portada{
-      margin: 45px 0 45px;
+    .portada{
+      margin: 20px 0;
     }
-    */
+    
     .imagen__portada {
-     /* margin: 0 auto;*/
       width: 275px;
       height: 275px; 
      }
 
-     /*.servicios{
-      margin: 28px 0 60px;
-     }*/
+     .servicios{
+      gap: 15px;
+     }
   }
   
   

@@ -132,18 +132,15 @@ ul, li {
 
 @media (max-width: 480px) {
   #index__grid {
-    min-height: 100vh; }
-  /*.portada{
-      margin: 45px 0 45px;
-    }
-    */
+    min-height: 100vh;
+    grid-template-rows: 75px auto auto 60px; }
+  .portada {
+    margin: 20px 0; }
   .imagen__portada {
-    /* margin: 0 auto;*/
     width: 275px;
     height: 275px; }
-  /*.servicios{
-      margin: 28px 0 60px;
-     }*/ }
+  .servicios {
+    gap: 15px; } }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
@@ -234,23 +231,18 @@ ul, li {
   background-color: grey; }
 
 @media (max-width: 600px) {
-  #galeria__grid {
-    min-height: 100vh;
-    grid-template-rows: 75px auto 60px; }
   #carouselExampleFade {
     width: 415px; } }
 
 @media (max-width: 480px) {
-  /*.h1__galeria{
-     margin: 75px auto 30px;
-    }*/
+  #galeria__grid {
+    min-height: 100vh;
+    grid-template-rows: 75px auto 60px; }
+  .h1__galeria {
+    margin: 30px auto 30px; }
   #carouselExampleFade {
-    width: 320px;
-    /* margin-top: 60px;
-      gap: 40px;*/ }
-  /*.carousel-indicators{
-      margin: 20px;
-    }*/
+    width: 300px;
+    margin-top: 20px; }
   .d-block {
     width: 200px;
     height: 300px; } }
@@ -327,5 +319,7 @@ ul, li {
   #contacto__grid {
     min-height: 100vh;
     grid-template-rows: 75px auto 60px; }
+  .h1__contacto {
+    margin-top: 35px; }
   .formulario {
-    margin: 15px 30px; } }
+    margin: 40px 30px; } }
