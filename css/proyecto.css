@@ -131,14 +131,19 @@ ul, li {
     transform: none; } }
 
 @media (max-width: 480px) {
-  .portada {
-    margin: 45px 0 45px; }
+  #index__grid {
+    min-height: 100vh; }
+  /*.portada{
+      margin: 45px 0 45px;
+    }
+    */
   .imagen__portada {
-    margin: 0 auto;
+    /* margin: 0 auto;*/
     width: 275px;
     height: 275px; }
-  .servicios {
-    margin: 28px 0 60px; } }
+  /*.servicios{
+      margin: 28px 0 60px;
+     }*/ }
 
 /* ----------------------------------------PAGE QUIEN SOY----------------------------------------*/
 #quiensoy__grid {
@@ -236,14 +241,16 @@ ul, li {
     width: 415px; } }
 
 @media (max-width: 480px) {
-  .h1__galeria {
-    margin: 75px auto 30px; }
+  /*.h1__galeria{
+     margin: 75px auto 30px;
+    }*/
   #carouselExampleFade {
     width: 320px;
-    margin-top: 60px;
-    gap: 40px; }
-  .carousel-indicators {
-    margin: 20px; }
+    /* margin-top: 60px;
+      gap: 40px;*/ }
+  /*.carousel-indicators{
+      margin: 20px;
+    }*/
   .d-block {
     width: 200px;
     height: 300px; } }
@@ -320,7 +327,5 @@ ul, li {
   #contacto__grid {
     min-height: 100vh;
     grid-template-rows: 75px auto 60px; }
-  .h1__contacto {
-    margin-top: 50px; }
   .formulario {
-    margin: 20px 30px; } }
+    margin: 15px 30px; } }

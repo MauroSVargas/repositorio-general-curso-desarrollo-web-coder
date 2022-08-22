@@ -121,19 +121,23 @@
   }
   
   @media (max-width: 480px) {
-    .portada{
-      margin: 45px 0 45px;
+    #index__grid{
+      min-height: 100vh;
     }
     
+    /*.portada{
+      margin: 45px 0 45px;
+    }
+    */
     .imagen__portada {
-      margin: 0 auto;
+     /* margin: 0 auto;*/
       width: 275px;
       height: 275px; 
      }
 
-     .servicios{
+     /*.servicios{
       margin: 28px 0 60px;
-     }
+     }*/
   }
   
   
