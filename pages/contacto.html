@@ -59,7 +59,7 @@
         </div>
 
 
-            <form name="input" action="../form.php" method="POST" class="formulario" onsubmit="return checkRadio(this)">
+            <form class="formulario">
                 <div>
                     <p class="parrafo__contacto">completa el formulario para contactarte<p>
                 </div>
@@ -139,24 +139,6 @@
 </div>
 
 <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-<script type="text/javascript">
-    function checkRadio(form){
-        marcado=false;
-        for ( var i = 0; i < form.seleccioneSuGénero.length; i++ ) {
-            if (form.seleccioneSuGénero[i].checked)
-                marcado = true;
-        }
-
-        if(!marcado){
-            alert("Por favor, debe elegir una opción!");
-            return false;
-        }
-        else{
-            return true;
-        }
-    }
-    </script>
     
 </body>
 </html>
